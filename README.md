@@ -10,11 +10,22 @@ Usage
 
 `static function StrictUrlValidator::validate( $url, $validateHost = false, $validateAddress = false )`
 
-string	$url				The URL to be validated<br />
-boolean	$validateHost		If set to true, existence of the hostname will be tested<br />
-boolean	$validateAddress	If set to true, return code of the URL will be tested
+<table>
+<tr>
+	<td>string	`$url`</td>
+	<td>The URL to be validated</td>
+</tr>
+<tr>
+	<td>boolean	`$validateHost`</td>
+	<td>If set to `true`, existence of the hostname will be tested</td>
+</tr>
+<tr>
+	<td>boolean	`$validateAddress`</td>
+	<td>If set to `true`, server return code of the URL will be tested</td>
+</tr>
+</table>
 
-Returns true if the URL appears to be valid, false otherwise.
+Returns `true` if the URL appears to be valid, `false` otherwise.
 
 
 `static function StrictUrlValidator::getError()`
